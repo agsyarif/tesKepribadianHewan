@@ -1,40 +1,59 @@
 import React, { useState } from 'react';
 
 const questions = [
-    {
-        question: "Apa aktivitas favorit Anda?",
-        answers: [
-            { text: "Bermain di luar", type: "Anjing" },
-            { text: "Tidur sepanjang hari", type: "Kucing" },
-            { text: "Berenang", type: "Ikan" },
-            { text: "Terbang tinggi", type: "Burung" }
-        ]
-    },
-    {
-        question: "Apa makanan favorit Anda?",
-        answers: [
-            { text: "Daging", type: "Anjing" },
-            { text: "Ikan", type: "Kucing" },
-            { text: "Roti", type: "Burung" },
-            { text: "Serangga", type: "Ikan" }
-        ]
-    },
-    {
-        question: "Apa tempat favorit Anda?",
-        answers: [
-            { text: "Rumah", type: "Kucing" },
-            { text: "Taman", type: "Anjing" },
-            { text: "Laut", type: "Ikan" },
-            { text: "Pohon", type: "Burung" }
-        ]
-    }
+  {
+      question: "Apa aktivitas favorit Anda?",
+      answers: [
+          { text: "Bermain di luar", type: "Anjing" },
+          { text: "Tidur sepanjang hari", type: "Kucing" },
+          { text: "Berenang", type: "Ikan" },
+          { text: "Terbang tinggi", type: "Burung" },
+          { text: "Berburu", type: "Serigala" },
+          { text: "Menggali lubang", type: "Kelinci" }
+      ]
+  },
+  {
+      question: "Apa makanan favorit Anda?",
+      answers: [
+          { text: "Daging", type: "Anjing" },
+          { text: "Ikan", type: "Kucing" },
+          { text: "Roti", type: "Burung" },
+          { text: "Serangga", type: "Ikan" },
+          { text: "Buah", type: "Kelinci" },
+          { text: "Segala jenis daging", type: "Serigala" }
+      ]
+  },
+  {
+      question: "Apa tempat favorit Anda?",
+      answers: [
+          { text: "Rumah", type: "Kucing" },
+          { text: "Taman", type: "Anjing" },
+          { text: "Laut", type: "Ikan" },
+          { text: "Pohon", type: "Burung" },
+          { text: "Hutan", type: "Serigala" },
+          { text: "Lubang di tanah", type: "Kelinci" }
+      ]
+  },
+  {
+      question: "Apa sifat Anda yang paling menonjol?",
+      answers: [
+          { text: "Setia", type: "Anjing" },
+          { text: "Mandiri", type: "Kucing" },
+          { text: "Tenang", type: "Ikan" },
+          { text: "Bebas", type: "Burung" },
+          { text: "Cerdik", type: "Serigala" },
+          { text: "Pemalu", type: "Kelinci" }
+      ]
+  }
 ];
 
 const results = {
-    Anjing: "Anda adalah Anjing! Setia dan penuh energi.",
-    Kucing: "Anda adalah Kucing! Mandiri dan suka bersantai.",
-    Ikan: "Anda adalah Ikan! Tenang dan suka berenang.",
-    Burung: "Anda adalah Burung! Bebas dan suka petualangan."
+  Anjing: "Anda adalah Anjing! Setia dan penuh energi.",
+  Kucing: "Anda adalah Kucing! Mandiri dan suka bersantai.",
+  Ikan: "Anda adalah Ikan! Tenang dan suka berenang.",
+  Burung: "Anda adalah Burung! Bebas dan suka petualangan.",
+  Serigala: "Anda adalah Serigala! Cerdik dan suka berburu.",
+  Kelinci: "Anda adalah Kelinci! Pemalu dan suka mengunyah."
 };
 
 const TesKepribadianHewan = () => {
